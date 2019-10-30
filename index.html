@@ -5,7 +5,7 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.5">
-<title>Deployment in SEDE - SKETCH</title>
+<title>SEDE Documentation</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -418,97 +418,25 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 .show-for-print{display:inherit!important}}
 </style>
 </head>
-<body class="article toc2 toc-left">
+<body class="article">
 <div id="header">
-<h1>Deployment in SEDE - <code>SKETCH</code></h1>
-<div id="toc" class="toc2">
-<div id="toctitle">Table of Contents</div>
-<ul class="sectlevel1">
-<li><a href="#_edd">EDD</a>
-<ul class="sectlevel2">
-<li><a href="#_blocks">Blocks</a></li>
-</ul>
-</li>
-</ul>
-</div>
+<h1>SEDE Documentation</h1>
 </div>
 <div id="content">
-<div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p>This is the documentation on the <strong>deployment procedures</strong> of SEDE components.
-This document and the described tools and methods are <strong>work in progress</strong>.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_edd">EDD</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The Executor Deployment Daemon (EDD) is a tool that manages software build and installation and integration into SEDE components, especially SEDE executors.</p>
-</div>
-<div class="paragraph">
-<p>The following needs are the main motivations for its creation:</p>
-</div>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>flexible and configurable</strong> installation procedures</p>
+<p><a href="service-descs.html">Service Description</a></p>
 </li>
 <li>
-<p>fully <strong>automated</strong></p>
-</li>
-<li>
-<p>remotely <strong>accessible</strong></p>
-</li>
-<li>
-<p>automatic <strong>dependency resolution</strong></p>
-</li>
-<li>
-<p>time and space <strong>efficient</strong></p>
+<p><a href="deployment.html">Deployment</a></p>
 </li>
 </ul>
-</div>
-<div class="sect2">
-<h3 id="_blocks">Blocks</h3>
-<div class="paragraph">
-<p>Software build, installation and runtime procedures are defined in jvm classes, called <code>Blocks</code>.
-This notion follows the example of <a href="https://easybuild.readthedocs.io/en/latest/Concepts_and_Terminology.html#easyblocks">Easyblocks</a> from the <code>EasyBuild</code> installation framework which has proven as a clean and working solution for software deployment.</p>
-</div>
-<div class="paragraph">
-<p>Blocks rely on these concepts:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Inheritance:
-Extend <strong>generic</strong> blocks that implement a procedure using <strong>standard tools</strong> (e.g. Maven, CMake, VirtualEnv)</p>
-</li>
-<li>
-<p>Inversion of Control:
-Dependencies on other blocks are resolved by <strong>dependency injection</strong></p>
-</li>
-<li>
-<p>Event Bus:
-Blocks can <strong>subscribe to events</strong> from other blocks to add <strong>custom actions</strong>, or <strong>publish own events</strong> for future extensions.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>The following uml activity diagram illustrates the process of software build in EDD:</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="edd-overview.svg" alt="edd overview" width="317" height="931">
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-10-30 09:42:30 CET
+Last updated 2019-10-30 09:52:25 CET
 </div>
 </div>
 </body>
