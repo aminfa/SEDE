@@ -1,0 +1,11 @@
+.doc_cards .card {
+    width: 18rem;
+}
+#main_jumbo {
+    /* background-color: hsl(115, 100%, 98%); */
+    color: hsl(264, 10%, 30%);
+}
+#sourceCodeLink {
+    background-color: hsl(214, 50%, 50%);
+    color: #f5f5f5;
+}

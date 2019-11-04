@@ -495,7 +495,7 @@ The advantage of having a simple json-format was neutralized by numerous down si
 This was done by implementing a
 <a href="https://github.com/fmohr/SEDE/tree/dev/docs/SEDE.core/servicedesc-dsl/">custom Groovy DSL</a>
 <sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnote_3" title="View footnote.">3</a>]</sup>
-that handles incremental and declarative user scripts that creats and manipules an objects graph.</p>
+that handles incremental and declarative user scripts that creates and manipulates an objects graph.</p>
 </div>
 </div>
 </div>
@@ -661,7 +661,7 @@ One can, alternatively, split the services up into multiple service collections,
 <div class="sect2">
 <h3 id="_service">Service</h3>
 <div class="paragraph">
-<p>A <a href="https://github.com/fmohr/SEDE/tree/dev/docs/SEDE.core/servicedesc/src/main/java/de/upb/sede/exec/IServiceDesc.java">Service</a> description offers <strong>parametrization</strong>, defines <strong>state</strong> and groups a set of common *functionality.
+<p>A <a href="https://github.com/fmohr/SEDE/tree/dev/docs/SEDE.core/servicedesc/src/main/java/de/upb/sede/exec/IServiceDesc.java">Service</a> description offers <strong>parametrization options</strong>, defines <strong>service state</strong> and groups a set of common <strong>functionality</strong>.
 The next file adds a <code>Primes</code> service to out <code>MathLib</code> Service Collection that is able to generate prime numbers.</p>
 </div>
 <div class="listingblock">
@@ -698,10 +698,10 @@ collection ('MathLib') {
 <div class="colist arabic">
 <ol>
 <li>
-<p>Similiar to <code>typedef</code>, predefine the <code>Number</code> type into a  variable and reuse the number variable inside this document.</p>
+<p>Similar to <code>typedef</code> operator in C, predefine the <code>Number</code> type into a  variable and reuse the number variable inside this document.</p>
 </li>
 <li>
-<p>We can overwrite the previous specification; in this case the simple name of the collection has been renamed.</p>
+<p>We can access and alter the previous specification; in this case the simple name of the collection has been renamed.</p>
 </li>
 <li>
 <p>Create a service with the qualifier: <code>ai.libs.Primers</code>.</p>
@@ -710,10 +710,10 @@ collection ('MathLib') {
 <p>Create a method inside of the service called <code>generateRandom</code>.</p>
 </li>
 <li>
-<p>Overload the previous method definition with a different signature. Both method definitions are preserved and are seen separately.</p>
+<p>Overload the previous method definition with a different signature. Both method definitions are preserved and are handled separately.</p>
 </li>
 <li>
-<p>This method definiton contains an aditional <a href="https://groovy-lang.org/closures.html">Closure</a> that includes additional tweaks of method properties.</p>
+<p>This method definition contains an additional <a href="https://groovy-lang.org/closures.html">Closure</a> that includes additional tweaks of method properties.</p>
 </li>
 <li>
 <p>Set the name of the first input parameter. This does not have any functional side-effect for now.</p>
@@ -914,7 +914,7 @@ The design of Service Parametrization was done with integration into HASCO in mi
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-11-02 00:29:39 CET
+Last updated 2019-11-04 09:35:36 CET
 </div>
 </div>
 </body>
