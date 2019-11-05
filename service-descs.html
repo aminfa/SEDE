@@ -545,19 +545,19 @@ The SDL compiler expects two kind of user <strong>inputs</strong>.</p>
 <h3 id="_sdl_compiler">SDL Compiler</h3>
 <div class="paragraph">
 <p>The SDL compiler is an executable jar program that can be used to manually transcribe SDL files into a desired target format.
-Download it from this link: <a href="https://github.com/fmohr/SEDE/releases/download/sdlc-v0.1/sdlc.jar">sdlc.jar</a></p>
+Download it from this link: <a href="https://github.com/fmohr/SEDE/releases/download/sdlc-v0.2/sdlc.jar">sdlc.jar</a></p>
 </div>
 <div class="paragraph">
-<p>General usage:
-<span class="small blue">TODO</span> update the help output</p>
+<p>General usage:</p>
 </div>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>usage: java -jar sdlc.jar [option]
- -c,--components     outputs a HASCO component model <b class="conum">(1)</b>
- -h,--help           display usage
- -i,--inputs &lt;arg&gt;   input service description file paths <b class="conum">(2)</b>
- -o,--output &lt;arg&gt;   output service description file path <b class="conum">(3)</b></code></pre>
+ -c,--components       outputs a HASCO component model <b class="conum">(1)</b>
+ -h,--help             display usage
+ -i,--inputs &lt;arg&gt;     input service description file paths. Separate by: , <b class="conum">(2)</b>
+ -o,--output &lt;arg&gt;     output service description file path <b class="conum">(3)</b>
+ -s,--services &lt;arg&gt;   white-list of services that are considered when targeting components. If empty all services are compiled. Separate by: , <b class="conum">(4)</b></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -570,6 +570,9 @@ Download it from this link: <a href="https://github.com/fmohr/SEDE/releases/down
 </li>
 <li>
 <p>Provide a single output file. This file will be overwritten with the output of the compilation.</p>
+</li>
+<li>
+<p>An optional white-list of services that are compiled that is considered when targeting components.</p>
 </li>
 </ol>
 </div>
@@ -914,7 +917,7 @@ The design of Service Parametrization was done with integration into HASCO in mi
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-11-04 09:35:36 CET
+Last updated 2019-11-05 11:39:07 CET
 </div>
 </div>
 </body>
